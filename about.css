@@ -1,0 +1,149 @@
+/* General reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Navbar */
+  header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  nav .logo img {
+    width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #5a5eff;
+  }
+/* Bagian About */
+.about-section {
+    background-color: #5a80aa;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .about-image img {
+    width: 300px; /* ganti dari 100px jadi lebih besar tapi tetap kecil */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* opsional, buat kelihatan lebih "angkat" */
+    transition: transform 0.3s ease;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  .tools-section {
+    padding: 100px 80px;
+    color: #fff;
+    background: url("img/Hi!\ Saya\ Fiqram\ \(1\).png") no-repeat center center ;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+  }
+  .tools-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  
+  .tool {
+    background-color: rgba(255, 255, 255, 0.1); /* Putih transparan */
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  
+  .tool img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  
+  .tool:hover {
+    transform: scale(1.05);
+  }
+  
+
