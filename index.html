@@ -3,83 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiqram1001 - Home</title>
-    <link rel="stylesheet" href="style.css?v=2">
-    <link rel="stylesheet" href="blog.css">
+    <title>Fiqram - Junior Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
     <header>
-        <nav>
-          <div class="logo">
-            <img src="img/Please (1).png" alt="Fiqram1001 Logo" width="150">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Please (1).png" alt="FIQRAM001">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <h1>Hi, Saya Fiqram!</h1>
-          <h2>Junior Web Developer</h2>
-          <p>Welcome to my website. Jelajahi portofolio saya<br>dan temukan hasil karya terbaik saya</p>
-          <a href="project.html" class="btn-gradient">See My Project</a>
-        </div>
-      </div>
-    </section>
-    <section class="bottom-white"></section>
 
-    
-    
-    
-    <!-- Recent Posts -->
-    <section id="blog" class="blog-section">
-      <h3 class="blog-label">Articles</h3>
-      <h1 class="blog-title">Recent Post</h1>
-    
-      <div class="articles-container">
-        <div class="article-card">
-          <a href="artikel1.html">
-            <img src="img/Realty Times - How To Build A Career In Real Estate Development.jpg" alt="Artikel 1">
-            <div class="article-content">
-              <h4>Strategi Membangun Karir dan Bisnis yang Berkelanjutan</h4>
-              <p>
-                Pelajari langkah-langkah membangun karir dan bisnis yang kuat dengan strategi jangka panjang...
-              </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="img/Desain tanpa judul (9).png" alt="Foto Fiqram">
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1>Hi, Saya Fiqram!</h1>
+                        <h2>Junior Web Developer</h2>
+                        <p>Hi There! Welcome to my website. Jelajahi portofolio saya dan temukan hasil karya terbaik saya</p>
+                        <a href="project.html" class="cta-button">See My Project</a>
+                    </div>
+                </div>
             </div>
-          </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fiqram. All rights reserved.</p>
         </div>
-    
-        <div class="article-card">
-          <a href="artikel2.html">
-            <img src="img/TERBAIK, Call 0812-8020-6147, Guru Pembelajaran Online, Uji Kompetensi Guru Online, Uji Kompetensi.jpg" alt="Artikel 2">
-            <div class="article-content">
-              <h4>Belajar dari Pengalaman: Cara Meningkatkan Produktivitas</h4>
-              <p>
-                Cara paling efektif untuk meningkatkan produktivitas bisa dimulai dari belajar pengalaman diri sendiri dan orang lain...
-              </p>
-            </div>
-          </a>
-        </div>
-    
-        <div class="article-card">
-          <a href="artikel3.html">
-            <img src="img/How To Implement a Data-Driven Media Budget By Mark R Graham.jpg" alt="Artikel 3">
-            <div class="article-content">
-              <h4>Kunci Sukses: Tips dan Trik Menjadi Lebih Efektif</h4>
-              <p>
-                Sukses bukan hanya tentang kerja keras, tapi juga tentang strategi yang tepat dan konsistensi dalam tindakan sehari-hari...
-              </p>
-            </div>
-          </a>
-        </div>
+    </footer>
+
+    <section class="blog-section">
+      <div class="container">
+          <div class="blog-header">
+              <div class="blog-title">
+                  <h3>Articles</h3>
+                  <h2>Recent Post</h2>
+              </div>
+              <div class="search-bar">
+                  <input type="text" placeholder="Search articles...">
+                  <button type="submit">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+  
+          <div class="blog-cards">
+              <!-- Desain Grafis Card -->
+              <a href="artikel-desain-grafis.html" class="blog-card-link">
+                  <div class="blog-card">
+                      <div class="card-content">
+                          <h3>Desain Grafis</h3>
+                          <p>Temukan tren terbaru dalam desain UI/UX dan grafis</p>
+                          <div class="card-image">
+                              <img src="https://via.placeholder.com/400x250/3D7BF4/FFFFFF?text=UI/UX+Design" alt="UI/UX Design">
+                          </div>
+                      </div>
+                  </div>
+              </a>
+  
+              <!-- Ekonomi Card -->
+              <a href="artikel-ekonomi.html" class="blog-card-link">
+                  <div class="blog-card">
+                      <div class="card-content">
+                          <h3>Ekonomi</h3>
+                          <p>Analisis mendalam tentang ekonomi global, bisnis, dan investasi</p>
+                          <div class="card-image">
+                              <img src="https://via.placeholder.com/400x250/38C9C1/FFFFFF?text=Ekonomi" alt="Ekonomi">
+                          </div>
+                      </div>
+                  </div>
+              </a>
+  
+              <!-- Game Card -->
+              <a href="artikel-game.html" class="blog-card-link">
+                  <div class="blog-card">
+                      <div class="card-content">
+                          <h3>Game</h3>
+                          <p>Ulasan, tips, dan berita terbaru seputar dunia gaming yang menarik</p>
+                          <div class="card-image">
+                              <img src="https://via.placeholder.com/400x250/222222/FFFFFF?text=Gaming" alt="Gaming">
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+  
+          <div class="read-more-container">
+              <a href="blog.html" class="read-more-btn">Read More</a>
+          </div>
       </div>
-    </section>
+  </section>
+</body>
+</html>

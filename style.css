@@ -1,106 +1,371 @@
-/* General reset */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+/* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background-color: #ffffff;
-    color: #333;
-  }
-  
-  /* Navbar */
-  header {
-    background-color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  nav .logo img {
-    width: 100px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    color: #5a5eff;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(rgba(21, 32, 66, 0.7), rgba(21, 32, 66, 0.7)),
-                url('img/image.png') center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .hero h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-  }
-  
-  .btn-gradient {
-    background: linear-gradient(90deg, #c4e3fd, #dda7f6);
-    color: #333;
-    font-size: 1.2rem;
-    padding: 14px 30px;
-    border: none;
-    border-radius: 999px;
-    text-decoration: none;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .btn-gradient:hover {
-    transform: scale(1.05);
-  }
-  .bottom-white {
-    background-color: white;
-    height: 100px; /* Bisa disesuaikan panjangnya */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+  color: #4562FF;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(40, 50, 80, 0.9), rgba(40, 50, 80, 0.85)), url('img/image.png') no-repeat center/cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  /* Menghilangkan gradient transparan di bawah */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  gap: 30px; /* Mengurangi gap dari 40px menjadi 30px */
+}
+
+.profile-section {
+  flex: 0 0 40%;
+}
+
+.profile-image {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-right: 10px; /* Menambah margin ke kanan */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 0 0 50%;
+  padding-left: 10px; /* Menambah padding di kiri */
+}
+
+.profile-info h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.profile-info h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #c8d5f9;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #6a8bff, #a778ff);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(106, 139, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(106, 139, 255, 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px; /* Sedikit lebih rapat di tampilan mobile */
   }
 
-  /* Recent Post Section */
+  .profile-info {
+      margin-top: 10px;
+  }
+
+  .profile-info p {
+      margin: 0 auto 30px;
+  }
+
+  .profile-image {
+      margin-right: 0;
+  }
+
+  .profile-info {
+      padding-left: 0;
+  }
+
+  nav ul li {
+      margin-left: 15px;
+  }
+
+  nav ul li a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+      width: 200px;
+      height: 200px;
+  }
+
+  .profile-info h1 {
+      font-size: 30px;
+  }
+
+  .profile-info h2 {
+      font-size: 18px;
+  }
+
+  nav ul li {
+      margin-left: 10px;
+  }
+
+  nav ul li a {
+      font-size: 12px;
+  }
+}
+
+/* Blog Section */
+.blog-section {
+  background: linear-gradient(rgba(40, 50, 80, 0.9), rgba(40, 50, 80, 0.85));
+  padding: 80px 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blog-title h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.blog-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-bar button {
+  background-color: #3D7BF4;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+
+.blog-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #6a8bff, #a778ff);
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(106, 139, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(106, 139, 255, 0.6);
+}
+
+/* Responsive Styles for Blog Section */
+@media (max-width: 900px) {
+  .blog-cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
   
+  .blog-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+  
+  .search-bar {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-cards {
+      grid-template-columns: 1fr;
+  }
+  
+  .blog-title h2 {
+      font-size: 28px;
+  }
+}

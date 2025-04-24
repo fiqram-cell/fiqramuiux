@@ -1,89 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fiqram1001 - Project</title>
-  <link rel="stylesheet" href="project.css?v=2" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Fioramodi</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav>
-          <div class="logo">
-            <img src="img/Please (1).png" alt="Fiqram1001 Logo" width="150">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/fioramodi-logo.png" alt="Fioramodi Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html" class="active">Project</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="project-section">
-      <p>Projects</p>
-      <h2>My Latest Project</h2>
-  
-      <a href="project-detail-web-portofolio.html" class="project">
-        <img src="img/image (12).png" alt="Web Portofolio Preview" />
-        <div class="project-content">
-          <div class="tags">
-            <span class="tag">UI/UX Design</span>
-            <span class="tag">Web Design</span>
-          </div>
-          <div class="project-title">Web Portofolio – UI Web Design</div>
-          <div class="project-desc">Membuat UI web Portofolio untuk menampilkan project dan karya</div>
-        </div>
-      </a>
-  
-      <a href="project-detail-dashboard.html" class="project">
-        <img src="img/image (13).png" alt="Dashboard Preview" />
-        <div class="project-content">
-          <div class="tags">
-            <span class="tag">UI/UX Design</span>
-            <span class="tag">Web Design</span>
-          </div>
-          <div class="project-title">Dashboard – Dashboard Analitik</div>
-          <div class="project-desc">Membuat dashboard analitik menggunakan R Studio</div>
-        </div>
-      </a>
-    </section>
-    <div class="section-divider"></div>
-    <section id="all-projects">
-      <h2>My Project</h2>
-      <div class="project-grid">
-    
-        <div class="project-card">
-          <div class="card-header">UI/UX Design</div>
-          <img src="img/image (9).png" alt="UI/UX Design Preview">
-          <a href="project-uiux.html" class="btn-detail">See Details</a>
-        </div>
-    
-        <div class="project-card">
-          <div class="card-header">App Design & Prototype</div>
-          <img src="img/Screenshot 2025-03-17 164624.png" alt="App Design Preview">
-          <a href="project-app-design.html" class="btn-detail">See Details</a>
-        </div>
-    
-        <div class="project-card">
-          <div class="card-header">Web Design</div>
-          <img src="img/image (10).png" alt="Web Design Preview">
-          <a href="project-webdesign.html" class="btn-detail">See Details</a>
-        </div>
-    
-        <div class="project-card">
-          <div class="card-header">Web Design</div>
-          <img src="img/image (11).png" alt="Creative Web Design Preview">
-          <a href="project-creative-web.html" class="btn-detail">See Details</a>
-        </div>
-    
-      </div>
-    </section>
-    
-</body>
+    <main>
+        <!-- Latest Project Section -->
+        <section class="latest-project">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Projects</span>
+                    <h2>My Latest Project</h2>
+                </div>
+                
+                <div class="project-cards">
+                    <div class="project-card large">
+                        <div class="project-image">
+                            <img src="images/web-portfolio.jpg" alt="Web Portfolio Project">
+                        </div>
+                        <div class="project-info">
+                            <div class="tags">
+                                <span class="tag ui-ux">UI/UX Design</span>
+                                <span class="tag web">Web Design</span>
+                            </div>
+                            <h3>Web Portfolio - UI Web Design</h3>
+                            <p>Membuat UI web portfolio untuk menampilkan project dan karya</p>
+                            <a href="#" class="btn-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card large">
+                        <div class="project-image">
+                            <img src="images/dashboard.jpg" alt="Dashboard Project">
+                        </div>
+                        <div class="project-info">
+                            <div class="tags">
+                                <span class="tag ui-ux">UI/UX Design</span>
+                                <span class="tag web">Web Design</span>
+                            </div>
+                            <h3>Dashboard - Dashboard Analitik</h3>
+                            <p>Membuat dashboard analitik menggunakan R Studio</p>
+                            <a href="#" class="btn-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- My Project Section -->
+        <section class="my-project">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Project</h2>
+                </div>
+                
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/ui-ux-project1.jpg" alt="UI/UX Design Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag ui-ux">UI/UX Design</div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/app-design.jpg" alt="App Design Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag app">App Design & Prototype</div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/web-design.jpg" alt="Web Design Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag web">Web Design</div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/web-design2.jpg" alt="Web Design Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag web">Web Design</div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/ecommerce.jpg" alt="E-commerce Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag ecommerce">Web E-commerce</div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/ui-ux-project2.jpg" alt="UI/UX Design Project">
+                            <div class="overlay">
+                                <a href="#" class="btn-details">See Details</a>
+                            </div>
+                        </div>
+                        <div class="project-tag ui-ux">UI/UX Design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/fioramodi-logo.png" alt="Fioramodi Logo">
+                    <p>Desain portfolio profesional untuk menampilkan karya dan project terbaik.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Fioramodi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

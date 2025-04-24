@@ -1,97 +1,261 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fiqram1001 - Blog</title>
-  <link rel="stylesheet" href="blog.css" />
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Fioramodi</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="img/Please (1).png" alt="Fiqram1001 Logo" width="150">
-    </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  </header>
-  <section id="blog" class="blog-section">
-    <h3 class="blog-label">Blog</h3>
-    <h1 class="blog-title">Populer Articles</h1>
-  
-    <div class="articles-container">
-      <div class="article-card">
-        <a href="artikel1.html">
-          <img src="img/Realty Times - How To Build A Career In Real Estate Development.jpg" alt="Artikel 1">
-          <div class="article-content">
-            <h4>Strategi Membangun Karir dan Bisnis yang Berkelanjutan</h4>
-            <p>
-              Pelajari langkah-langkah membangun karir dan bisnis yang kuat dengan strategi jangka panjang...
-            </p>
-          </div>
-        </a>
-      </div>
-  
-      <div class="article-card">
-        <a href="artikel2.html">
-          <img src="img/Kamu ingin hari-harimu lebih produktif_ Sebaiknya….jpg" alt="Artikel 2">
-          <div class="article-content">
-            <h4>Belajar dari Pengalaman: Cara Meningkatkan Produktivitas</h4>
-            <p>
-              Cara paling efektif untuk meningkatkan produktivitas bisa dimulai dari belajar pengalaman diri sendiri dan orang lain...
-            </p>
-          </div>
-        </a>
-      </div>
-  
-      <div class="article-card">
-        <a href="artikel3.html">
-          <img src="img/TERBAIK, Call 0812-8020-6147, Guru Pembelajaran Online, Uji Kompetensi Guru Online, Uji Kompetensi.jpg" alt="Artikel 3">
-          <div class="article-content">
-            <h4>Kunci Sukses: Tips dan Trik Menjadi Lebih Efektif</h4>
-            <p>
-              Sukses bukan hanya tentang kerja keras, tapi juga tentang strategi yang tepat dan konsistensi dalam tindakan sehari-hari...
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>  
-  <section id="articles" class="articles-section">
-    <h1 class="section-title">Articles</h1>
-    <div class="articles-grid">
-      <a href="artikel1.html" class="article-card">
-        <span class="category">Bisnis & Karir</span>
-        <img src="img/TERBAIK, Call 0812-8020-6147, Guru Pembelajaran Online, Uji Kompetensi Guru Online, Uji Kompetensi.jpg" alt="Artikel 1" />
-      </a>
-      <a href="artikel2.html" class="article-card">
-        <span class="category">Bisnis & Karir</span>
-        <img src="img/Realty Times - How To Build A Career In Real Estate Development.jpg" alt="Artikel 2" />
-      </a>
-      <a href="artikel3.html" class="article-card">
-        <span class="category">Bisnis & Karir</span>
-        <img src="img/Kamu ingin hari-harimu lebih produktif_ Sebaiknya….jpg" alt="Artikel 3" />
-      </a>
-      <a href="artikel4.html" class="article-card">
-        <span class="category">Game</span>
-        <img src="img/TERBAIK, Call 0812-8020-6147, Guru Pembelajaran Online, Uji Kompetensi Guru Online, Uji Kompetensi.jpg" alt="Artikel Game" />
-      </a>
-      <a href="artikel5.html" class="article-card">
-        <span class="category">Musik</span>
-        <img src="img/cfb50dfb-60a0-41e7-9faf-3423309cb7d8.jpg" alt="Artikel Musik" />
-      </a>
-      <a href="artikel6.html" class="article-card">
-        <span class="category">Kesehatan</span>
-        <img src="img/Download premium psd _ image of Hand holding variation of object about hospital, hands up, people, doctor, and america 379443.jpg" alt="Artikel Kesehatan" />
-      </a>
-    </div>
-  </section>  
- 
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/fioramodi-logo.png" alt="Fioramodi Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Popular Articles Section -->
+        <section class="popular-articles">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-content">
+                        <span class="subtitle">Blog</span>
+                        <h2>Populer Articles</h2>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search articles...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <!-- Popular Article 1 -->
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/team-building.jpg" alt="Team Building Strategy">
+                        </div>
+                        <div class="article-content">
+                            <h3>Strategi Membangun Kasi dan Bisnis yang Berkelanjutan</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> April 20, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Article 2 -->
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/productivity.jpg" alt="Productivity Tips">
+                        </div>
+                        <div class="article-content">
+                            <h3>Ideologi dan Pemahaman: Cara Meningkatkan Produktivitas</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> April 15, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Article 3 -->
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="images/success-tips.jpg" alt="Success Tips">
+                        </div>
+                        <div class="article-content">
+                            <h3>Kunci Sukses: Tips dan Trik Menjadi Lebih Efektif</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> April 10, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Articles Section -->
+        <section class="all-articles">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Articles</h2>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search articles...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <!-- Category: Bisnis & Karir -->
+                    <div class="article-card">
+                        <div class="article-category">Bisnis & Karir</div>
+                        <div class="article-image">
+                            <img src="images/failure.jpg" alt="Failure Article">
+                        </div>
+                        <div class="article-content">
+                            <h3>Belajar dari Kegagalan: Langkah Menuju Kesuksesan</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> April 5, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Bisnis & Karir -->
+                    <div class="article-card">
+                        <div class="article-category">Bisnis & Karir</div>
+                        <div class="article-image">
+                            <img src="images/climbing.jpg" alt="Career Climbing">
+                        </div>
+                        <div class="article-content">
+                            <h3>Memanjat Tangga Karir: Strategi untuk Profesional Muda</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> April 2, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Bisnis & Karir -->
+                    <div class="article-card">
+                        <div class="article-category">Bisnis & Karir</div>
+                        <div class="article-image">
+                            <img src="images/motivation.jpg" alt="Motivation">
+                        </div>
+                        <div class="article-content">
+                            <h3>One Day or Day One. You Decide.</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> March 28, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Game -->
+                    <div class="article-card">
+                        <div class="article-category">Game</div>
+                        <div class="article-image">
+                            <img src="images/game.jpg" alt="Gaming">
+                        </div>
+                        <div class="article-content">
+                            <h3>Pengaruh Game dalam Mengembangkan Keterampilan Berpikir Kritis</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> March 25, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Musik -->
+                    <div class="article-card">
+                        <div class="article-category">Musik</div>
+                        <div class="article-image">
+                            <img src="images/music.jpg" alt="Music">
+                        </div>
+                        <div class="article-content">
+                            <h3>Pengaruh Musik terhadap Produktivitas dan Kreativitas</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> March 20, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Category: Kesehatan -->
+                    <div class="article-card">
+                        <div class="article-category">Kesehatan</div>
+                        <div class="article-image">
+                            <img src="images/health.jpg" alt="Health">
+                        </div>
+                        <div class="article-content">
+                            <h3>Keseimbangan Hidup Sehat: Fisik dan Mental di Era Digital</h3>
+                            <div class="article-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> March 15, 2025</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Dapatkan artikel terbaru dan tips langsung ke inbox Anda</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/fioramodi-logo.png" alt="Fioramodi Logo">
+                    <p>Blog yang menyajikan informasi bermanfaat tentang bisnis, karir, teknologi, dan gaya hidup.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Fioramodi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+</html>

@@ -1,67 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fiqram1001 - Contact</title>
-  <link rel="stylesheet" href="contact.css?v=2" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIORAM001 - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <nav>
-          <div class="logo">
-            <img src="img/Please (1).png" alt="Fiqram1001 Logo" width="150">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="FIORAM001 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <section class="contact-section">
-      <div class="header">
-        <h1>Contact</h1>
-        <p>Start a Conversation</p>
-      </div>
-    
-      <div class="contact-icons">
-        <div class="contact-item">
-          <a href="https://maps.google.com" target="_blank">
-            <img src="https://img.icons8.com/color/96/google-maps-new.png" alt="Address">
-          </a>
-          <p>Address</p>
-        </div>
-        <div class="contact-item">
-          <a href="https://wa.me/1234567890" target="_blank">
-            <img src="https://img.icons8.com/color/96/whatsapp--v1.png" alt="Phone">
-          </a>
-          <p>Phone</p>
-        </div>
-        <div class="contact-item">
-          <a href="mailto:yourmail@example.com">
-            <img src="https://img.icons8.com/color/96/message-squared.png" alt="Mail">
-          </a>
-          <p>Mail</p>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-            <img src="https://img.icons8.com/color/96/linkedin.png" alt="LinkedIn">
-          </a>
-          <p>LinkedIn</p>
-        </div>
-        <div class="contact-item">
-          <a href="https://www.instagram.com/yourusername" target="_blank">
-            <img src="https://img.icons8.com/fluency/96/instagram-new.png" alt="Instagram">
-          </a>
-          <p>Instagram</p>
-        </div>
-      </div>
-    </section>
-    
 
-  
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Start a Conversation</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="icon">
+                        <img src="map-icon.png" alt="Address">
+                    </div>
+                    <h3>Address</h3>
+                    <p>Jl. Contoh No. 123<br>Jakarta, Indonesia 12345</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <img src="phone-icon.png" alt="Phone">
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+62 812 3456 7890</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <img src="mail-icon.png" alt="Mail">
+                    </div>
+                    <h3>Mail</h3>
+                    <p><a href="mailto:info@fioram001.com">info@fioram001.com</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <img src="linkedin-icon.png" alt="LinkedIn">
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/fioram001" target="_blank">linkedin.com/in/fioram001</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon">
+                        <img src="instagram-icon.png" alt="Instagram">
+                    </div>
+                    <h3>Instagram</h3>
+                    <p><a href="https://instagram.com/fioram001" target="_blank">@fioram001</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Send us a message</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="FIORAM001 Logo">
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FIORAM001. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
