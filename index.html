@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiqram - Junior Web Developer</title>
+    <title>Fiqram - Junior Web Developer Portfolio</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/Please (1).png" alt="FIQRAM001">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="FIQRAM001 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </header>
@@ -33,16 +38,58 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="profile-section">
-                        <div class="profile-image">
-                            <img src="img/Desain tanpa judul (9).png" alt="Foto Fiqram">
-                        </div>
+                    <div class="hero-image">
+                        <img src="img/Desain tanpa judul (9).png" alt="Fiqram's Photo">
                     </div>
-                    <div class="profile-info">
+                    <div class="hero-text">
                         <h1>Hi, Saya Fiqram!</h1>
                         <h2>Junior Web Developer</h2>
                         <p>Hi There! Welcome to my website. Jelajahi portofolio saya dan temukan hasil karya terbaik saya</p>
-                        <a href="project.html" class="cta-button">See My Project</a>
+                        <a href="project.html" class="btn-primary">See My Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>Saya adalah seorang Junior Web Developer dengan passion di bidang front-end development. 
+                       Dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern, saya siap membantu 
+                       mewujudkan ide Anda menjadi website yang menarik dan fungsional.</p>
+                    <a href="about.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-preview">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="project1.jpg" alt="Project 1">
+                        </div>
+                        <h3>E-commerce Website</h3>
+                        <p>Responsive e-commerce site dengan fitur shopping cart dan payment gateway</p>
+                        <a href="project.html" class="btn-text">View Project →</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="project2.jpg" alt="Project 2">
+                        </div>
+                        <h3>Company Profile</h3>
+                        <p>Website profil perusahaan dengan desain modern dan interaktif</p>
+                        <a href="project.html" class="btn-text">View Project →</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="project3.jpg" alt="Project 3">
+                        </div>
+                        <h3>Personal Blog</h3>
+                        <p>Blog pribadi dengan fitur CMS dan comment section</p>
+                        <a href="project.html" class="btn-text">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -51,72 +98,38 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Fiqram. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="FIQRAM001 Logo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Fiqram. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <section class="blog-section">
-      <div class="container">
-          <div class="blog-header">
-              <div class="blog-title">
-                  <h3>Articles</h3>
-                  <h2>Recent Post</h2>
-              </div>
-              <div class="search-bar">
-                  <input type="text" placeholder="Search articles...">
-                  <button type="submit">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                  </button>
-              </div>
-          </div>
-  
-          <div class="blog-cards">
-              <!-- Desain Grafis Card -->
-              <a href="artikel-desain-grafis.html" class="blog-card-link">
-                  <div class="blog-card">
-                      <div class="card-content">
-                          <h3>Desain Grafis</h3>
-                          <p>Temukan tren terbaru dalam desain UI/UX dan grafis</p>
-                          <div class="card-image">
-                              <img src="https://via.placeholder.com/400x250/3D7BF4/FFFFFF?text=UI/UX+Design" alt="UI/UX Design">
-                          </div>
-                      </div>
-                  </div>
-              </a>
-  
-              <!-- Ekonomi Card -->
-              <a href="artikel-ekonomi.html" class="blog-card-link">
-                  <div class="blog-card">
-                      <div class="card-content">
-                          <h3>Ekonomi</h3>
-                          <p>Analisis mendalam tentang ekonomi global, bisnis, dan investasi</p>
-                          <div class="card-image">
-                              <img src="https://via.placeholder.com/400x250/38C9C1/FFFFFF?text=Ekonomi" alt="Ekonomi">
-                          </div>
-                      </div>
-                  </div>
-              </a>
-  
-              <!-- Game Card -->
-              <a href="artikel-game.html" class="blog-card-link">
-                  <div class="blog-card">
-                      <div class="card-content">
-                          <h3>Game</h3>
-                          <p>Ulasan, tips, dan berita terbaru seputar dunia gaming yang menarik</p>
-                          <div class="card-image">
-                              <img src="https://via.placeholder.com/400x250/222222/FFFFFF?text=Gaming" alt="Gaming">
-                          </div>
-                      </div>
-                  </div>
-              </a>
-          </div>
-  
-          <div class="read-more-container">
-              <a href="blog.html" class="read-more-btn">Read More</a>
-          </div>
-      </div>
-  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        // Simple toggle menu for mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
