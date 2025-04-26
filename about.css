@@ -1,11 +1,11 @@
-/* About Page Specific Styles */
+/* Halaman About Fiqram */
 main {
-  padding-top: 74px; /* This should match or exceed your navbar height */
+  padding-top: 74px; 
 }
 .about-section {
   background: linear-gradient(rgba(69, 105, 144, 0.9), rgba(69, 105, 144, 0.85)), url('img/image.png') no-repeat center/cover;
   min-height: 90vh;
-  padding: 120px 0 80px 0; /* Increase top padding from 80px to 120px */
+  padding: 120px 0 80px 0; 
   position: relative;
 }
 
@@ -15,7 +15,7 @@ main {
   align-items: flex-start;
 }
 
-/* Profile Image Styling */
+/* Foto Profil Fiqram */
 .about-image-container {
   flex: 0 0 40%;
   display: flex;
@@ -45,7 +45,7 @@ main {
   object-fit: cover;
 }
 
-/* Social Icons */
+/* Ikon Sosmed */
 .about-social {
   display: flex;
   justify-content: center;
