@@ -3,260 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Fioramodi</title>
+    <title>Fiqram - Junior Web Developer</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="project.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-        <div class="header-content">
+    <header>
+        <div class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/Please (1).png" alt="FIQRAM001">
+                    <img src="logo.png" alt="FIQRAM001 Logo">
                 </a>
             </div>
             <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+<section class="popular-articles">
+    <div class="container">
+        <div class="section-header">
+            <div class="header-content">
+                <span class="subtitle">Blog</span>
+                <h2>Popular Articles</h2>
+            </div>
+        </div>
+        
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="images/team-building.jpg" alt="Team Building Strategy">
+                </div>
+                <div class="article-content">
+                    <h3>Strategi Membangun Kasi dan Bisnis yang Berkelanjutan</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> April 20, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="images/productivity.jpg" alt="Productivity Tips">
+                </div>
+                <div class="article-content">
+                    <h3>Ideologi dan Pemahaman: Cara Meningkatkan Produktivitas</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> April 15, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="images/success-tips.jpg" alt="Success Tips">
+                </div>
+                <div class="article-content">
+                    <h3>Kunci Sukses: Tips dan Trik Menjadi Lebih Efektif</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> April 10, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All Articles Section -->
+<section class="all-articles">
+    <div class="container">
+        <div class="section-header">
+            <div class="header-content">
+                <h2>All Articles</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ui-ux">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">App Design</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="articles-grid">
+            <!-- Category: Bisnis & Karir -->
+            <div class="article-card" data-category="bisnis">
+                <div class="article-category">Bisnis & Karir</div>
+                <div class="article-image">
+                    <img src="images/failure.jpg" alt="Failure Article">
+                </div>
+                <div class="article-content">
+                    <h3>Belajar dari Kegagalan: Langkah Menuju Kesuksesan</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> April 5, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- kategori Bisnis & Karir -->
+            <div class="article-card" data-category="bisnis">
+                <div class="article-category">Bisnis & Karir</div>
+                <div class="article-image">
+                    <img src="images/climbing.jpg" alt="Career Climbing">
+                </div>
+                <div class="article-content">
+                    <h3>Memanjat Tangga Karir: Strategi untuk Profesional Muda</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> April 2, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- kategori Bisnis & Karir -->
+            <div class="article-card" data-category="bisnis">
+                <div class="article-category">Bisnis & Karir</div>
+                <div class="article-image">
+                    <img src="images/motivation.jpg" alt="Motivation">
+                </div>
+                <div class="article-content">
+                    <h3>One Day or Day One. You Decide.</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> March 28, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Category: Game -->
+            <div class="article-card" data-category="game">
+                <div class="article-category">Game</div>
+                <div class="article-image">
+                    <img src="images/game.jpg" alt="Gaming">
+                </div>
+                <div class="article-content">
+                    <h3>Pengaruh Game dalam Mengembangkan Keterampilan Berpikir Kritis</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> March 25, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Category: Musik -->
+            <div class="article-card" data-category="musik">
+                <div class="article-category">Musik</div>
+                <div class="article-image">
+                    <img src="images/music.jpg" alt="Music">
+                </div>
+                <div class="article-content">
+                    <h3>Pengaruh Musik terhadap Produktivitas dan Kreativitas</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> March 20, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Category: Kesehatan -->
+            <div class="article-card" data-category="kesehatan">
+                <div class="article-category">Kesehatan</div>
+                <div class="article-image">
+                    <img src="images/health.jpg" alt="Health">
+                </div>
+                <div class="article-content">
+                    <h3>Keseimbangan Hidup Sehat: Fisik dan Mental di Era Digital</h3>
+                    <div class="article-meta">
+                        <span class="date"><i class="far fa-calendar-alt"></i> March 15, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Dapatkan artikel terbaru dan tips langsung ke inbox Anda</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="FIQRAM001 Logo">
+            </div>
+            <div class="footer-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="project.html">Project</a></li>
-                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Fiqram. All rights reserved.</p>
         </div>
     </div>
-</header>
-    <main>
-        <!-- Popular Articles Section -->
-        <section class="popular-articles">
-            <div class="container">
-                <div class="section-header">
-                    <div class="header-content">
-                        <span class="subtitle">Blog</span>
-                        <h2>Populer Articles</h2>
-                    </div>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search articles...">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                
-                <div class="articles-grid">
-                    <!-- Popular Article 1 -->
-                    <div class="article-card">
-                        <div class="article-image">
-                            <img src="images/team-building.jpg" alt="Team Building Strategy">
-                        </div>
-                        <div class="article-content">
-                            <h3>Strategi Membangun Kasi dan Bisnis yang Berkelanjutan</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> April 20, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Popular Article 2 -->
-                    <div class="article-card">
-                        <div class="article-image">
-                            <img src="images/productivity.jpg" alt="Productivity Tips">
-                        </div>
-                        <div class="article-content">
-                            <h3>Ideologi dan Pemahaman: Cara Meningkatkan Produktivitas</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> April 15, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Popular Article 3 -->
-                    <div class="article-card">
-                        <div class="article-image">
-                            <img src="images/success-tips.jpg" alt="Success Tips">
-                        </div>
-                        <div class="article-content">
-                            <h3>Kunci Sukses: Tips dan Trik Menjadi Lebih Efektif</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> April 10, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+</footer>
 
-        <!-- All Articles Section -->
-        <section class="all-articles">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Articles</h2>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search articles...">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                
-                <div class="articles-grid">
-                    <!-- Category: Bisnis & Karir -->
-                    <div class="article-card">
-                        <div class="article-category">Bisnis & Karir</div>
-                        <div class="article-image">
-                            <img src="images/failure.jpg" alt="Failure Article">
-                        </div>
-                        <div class="article-content">
-                            <h3>Belajar dari Kegagalan: Langkah Menuju Kesuksesan</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> April 5, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Category: Bisnis & Karir -->
-                    <div class="article-card">
-                        <div class="article-category">Bisnis & Karir</div>
-                        <div class="article-image">
-                            <img src="images/climbing.jpg" alt="Career Climbing">
-                        </div>
-                        <div class="article-content">
-                            <h3>Memanjat Tangga Karir: Strategi untuk Profesional Muda</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> April 2, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Category: Bisnis & Karir -->
-                    <div class="article-card">
-                        <div class="article-category">Bisnis & Karir</div>
-                        <div class="article-image">
-                            <img src="images/motivation.jpg" alt="Motivation">
-                        </div>
-                        <div class="article-content">
-                            <h3>One Day or Day One. You Decide.</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> March 28, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Category: Game -->
-                    <div class="article-card">
-                        <div class="article-category">Game</div>
-                        <div class="article-image">
-                            <img src="images/game.jpg" alt="Gaming">
-                        </div>
-                        <div class="article-content">
-                            <h3>Pengaruh Game dalam Mengembangkan Keterampilan Berpikir Kritis</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> March 25, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Category: Musik -->
-                    <div class="article-card">
-                        <div class="article-category">Musik</div>
-                        <div class="article-image">
-                            <img src="images/music.jpg" alt="Music">
-                        </div>
-                        <div class="article-content">
-                            <h3>Pengaruh Musik terhadap Produktivitas dan Kreativitas</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> March 20, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Category: Kesehatan -->
-                    <div class="article-card">
-                        <div class="article-category">Kesehatan</div>
-                        <div class="article-image">
-                            <img src="images/health.jpg" alt="Health">
-                        </div>
-                        <div class="article-content">
-                            <h3>Keseimbangan Hidup Sehat: Fisik dan Mental di Era Digital</h3>
-                            <div class="article-meta">
-                                <span class="date"><i class="far fa-calendar-alt"></i> March 15, 2025</span>
-                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
-                            </div>
-                            <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pagination">
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Newsletter Section -->
-        <section class="newsletter">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Dapatkan artikel terbaru dan tips langsung ke inbox Anda</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/fioramodi-logo.png" alt="Fioramodi Logo">
-                    <p>Blog yang menyajikan informasi bermanfaat tentang bisnis, karir, teknologi, dan gaya hidup.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Connect With Me</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Fioramodi. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<script>
+    // Simple toggle menu for mobile
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        this.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
