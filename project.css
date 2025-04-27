@@ -111,12 +111,10 @@ a:hover {
 
 /* Hero Section */
 .hero-project {
-  background-image: linear-gradient(rgba(26, 44, 86, 0.85), rgba(26, 44, 86, 0.85)), url('img/image.png');
+  background: linear-gradient(rgba(35, 52, 89, 0.95), rgba(38, 56, 96, 0.95)), url('img/image.png');
   background-size: cover;
-  background-position: center;
+  padding: 80px 0;
   color: var(--text-light);
-  padding: 120px 0 70px;
-  position: relative;
 }
 
 .hero-content {

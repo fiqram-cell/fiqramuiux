@@ -2,7 +2,7 @@
 :root {
   --primary-color: #4a6bff;
   --secondary-color: #6c757d;
-  --dark-bg: #2d3a59;
+  --dark-bg: rgb(45, 58, 89);
   --light-bg: #f8f9fa;
   --text-color: #333;
   --light-text: #fff;
@@ -48,7 +48,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('img/bg.jpg');
+  background: url('img/image.png');
+  background-size: cover;
   opacity: 0.1;
 }
 
