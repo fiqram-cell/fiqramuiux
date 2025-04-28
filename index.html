@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
@@ -38,20 +39,20 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-image">
+                    <div class="hero-image animate__animated animate__fadeInLeft animate__delay-0.5s">
                         <img src="img/Desain tanpa judul (9).png" alt="Fiqram's Photo">
                     </div>
-                    <div class="hero-text">
+                    <div class="hero-text animate__animated animate__fadeInRight animate__delay-0.5s">
                         <h1>Hi, Saya Fiqram!</h1>
                         <h2>Junior Web Developer</h2>
                         <p>Hi There! Welcome to my website. Jelajahi portofolio saya dan temukan hasil karya terbaik saya</p>
-                        <a href="project.html" class="btn-primary">See My Project</a>
+                        <a href="project.html" class="btn-primary animate__animated animate__pulse animate__infinite animate__slower">See My Project</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-preview">
+        <section class="about-preview animate__animated animate__fadeIn animate__delay-1s" data-animate-on-scroll="true">
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
@@ -64,11 +65,11 @@
             </div>
         </section>
 
-        <section class="projects-preview">
+        <section class="projects-preview animate__animated animate__fadeIn animate__delay-1.5s" data-animate-on-scroll="true">
             <div class="container">
                 <h2>Featured Projects</h2>
                 <div class="project-cards">
-                    <div class="project-card">
+                    <div class="project-card animate__animated animate__fadeInUp animate__delay-1.5s">
                         <div class="project-img">
                             <img src="img/1.jpg" alt="Project 1">
                         </div>
@@ -76,7 +77,7 @@
                         <p>Desain iklan yappay roti bakar</p>
                         <a href="project.html" class="btn-text">View Project →</a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card animate__animated animate__fadeInUp animate__delay-1.7s">
                         <div class="project-img">
                             <img src="img/company profil.jpg" alt="Project 2">
                         </div>
@@ -84,7 +85,7 @@
                         <p>Website profil perusahaan dengan desain modern dan interaktif</p>
                         <a href="project.html" class="btn-text">View Project →</a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card animate__animated animate__fadeInUp animate__delay-1.9s">
                         <div class="project-img">
                             <img src="img/personal blog.png" alt="Project 3">
                         </div>
@@ -97,7 +98,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="animate__animated animate__fadeIn animate__delay-2s">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -130,6 +131,31 @@
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
             this.classList.toggle('active');
+        });
+
+        // Add scroll animation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateOnScrollElements = document.querySelectorAll('[data-animate-on-scroll]');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // If element is in view
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated');
+                        entry.target.classList.add('animate__fadeIn');
+                        // Unobserve after animation
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            animateOnScrollElements.forEach(element => {
+                // Remove initial animation classes
+                element.classList.remove('animate__animated');
+                element.classList.remove('animate__fadeIn');
+                // Observe element
+                observer.observe(element);
+            });
         });
     </script>
 </body>
