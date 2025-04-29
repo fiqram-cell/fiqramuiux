@@ -1,3 +1,4 @@
+/* Halaman blog Fiqram */
 :root {
   --primary-color: #3a5bbd;
   --secondary-color: #1a2c56;
@@ -11,7 +12,6 @@
   --transition: all 0.3s ease;
 }
 
-/* Main Content Styles */
 main {
   padding-top: 74px;
 }
@@ -53,7 +53,7 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* Section Header Styles */
+/* Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 40px;
@@ -79,7 +79,7 @@ a:hover {
   position: relative;
 }
 
-/* Blog Sections Common Styles */
+/* Blog Sections */
 .popular-articles,
 .all-articles {
   background: linear-gradient(rgba(26, 44, 86, 0.95), rgba(26, 44, 86, 0.95)), url('img/image.png');
@@ -196,7 +196,7 @@ a:hover {
   transform: translateX(5px);
 }
 
-/* Article Category Badge */
+/* Article Category */
 .article-category {
   position: absolute;
   top: 15px;
@@ -210,7 +210,7 @@ a:hover {
   z-index: 2;
 }
 
-/* Pagination Styles */
+/* Pagination */
 .pagination a {
   display: inline-flex;
   align-items: center;

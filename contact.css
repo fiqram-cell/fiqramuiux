@@ -1,4 +1,4 @@
-/* Contact Section Styles */
+/* Halaman contact Fiqram */
 main {
   padding-top: 74px; 
 }
@@ -33,7 +33,7 @@ main {
   opacity: 0.9;
 }
 
-/* Contact Methods Grid */
+/* Contact Methods */
 .contact-methods {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -97,7 +97,7 @@ main {
   margin: 0;
 }
 
-/* Contact Form Styles */
+/* Contact Form */
 .contact-form-container {
   background-color: white;
   border-radius: 8px;
